@@ -7,6 +7,8 @@ use super::math::*;
 use super::signal::*;
 use super::*;
 use numeric_array::typenum::*;
+extern crate alloc;
+use alloc::vec::Vec;
 
 #[inline]
 fn interpolating_filter(input_buffer: &[f32], new_sample_index: usize) -> (f32, f32) {
