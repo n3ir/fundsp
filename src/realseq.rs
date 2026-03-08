@@ -8,6 +8,9 @@ use super::signal::*;
 use super::*;
 use tinyvec::TinyVec;
 
+extern crate alloc;
+use alloc::boxed::Box;
+
 #[derive(Default, Clone)]
 pub(crate) enum Message {
     /// Reset the sequencer.
